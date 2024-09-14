@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/stylesheets/styleIndex.css">
+    <link rel="stylesheet" href="/stylesheets/styleContact.css">
+
+    <link rel="shortcut icon" href="/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script defer src="/script_FRONT/hamburgerMenu.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo ">
+            <a href="/paginas/index.html">
+                <img class="header__logo--img" src="/imagenes/Logo_1.png" alt="descripcion">
+            </a>
+        </div>
+
+        <div class="header__menu ">
+            <button class="abrir__menu" id="abrir">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="cerrar__menu" id="cerrar">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav-list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/index.html">Inicio</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/detailcar.html">Detalle</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/contact.html">Contacto</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>       
+    </header>
+
+    <main class="main">
+
+    <div class="contact__header main__titulo--texto">
+        <h1 class="contact__title ">Contáctanos</h1>
+        <p>Estamos aquí para ayudarte a encontrar el auto de tus sueños. Ya sea que estés listo para agendar un test drive o necesites una cotización personalizada, nuestro equipo de expertos está a tu disposición. No dejes pasar la oportunidad de experimentar la emoción y el lujo de nuestros vehículos.</p>
+        <h4>¡Contáctanos hoy mismo y da el primer paso hacia una nueva aventura al volante!</h4>
+    </div>
+    
+    <!--Bloque: Contacto-->
+    <div class="contact">
+
+    <!-- Elemento: contact__form -->
+        <form class="contact__form">
+            <!--Elemento: contact__fieldset Títulos -->
+            <fieldset class="contact__fieldset">
+                <!--<legend class="contact__legend">Información de contacto</legend>-->
+                <h2 class="contact__subtitle">Agenda tu test drive ahora!</h2>
+
+                <!--Elemento: contact__field Nombre -->
+                <div class="contact__field">
+                    <label class="contact__label" for="FirstName">Nombre *</label>
+                    <input class="contact__input" type="text" name="FirstNameInput" id="name" minlength="2" maxlength="15" required>
+                </div>
+
+                <!--Elemento: contact__field Apellido-->
+                <div class="contact__field">
+                    <label class="contact__label" for="LastName">Apellido</label>
+                    <input class="contact__input" type="text" name="LastNameInput" id="surname">
+                </div>
+
+                <!--Elemento: contact__field Email-->
+                <div class="contact__field">
+                    <label class="contact__label" for="Email">Email *</label>
+                    <input class="contact__input" type="email" name="EmailInput" id="email" required>
+                </div>
+                
+                <!--Elemento: contact__field Teléfono-->
+                <div class="contact__field">
+                    <label class="contact__label" for="Phone">Teléfono</label>
+                    <input class="contact__input" type="number" name="PhoneInput" id="phone" min="0" max="999999999999" placeholder="(+IndicadorPais) Telefono">
+                </div>
+
+                <!--Elemento: contact__field Mensaje-->
+                <div class="contact__field">
+                    <label class="contact__label" for="Comments"> Mensaje</label>
+                    <textarea class="contact__textarea" name="TextArea" id="message" rows="4" cols="10">                        
+                    </textarea>   
+                </div>
+
+                <!--Elemento: contact__field Submit button-->
+                <input type="submit" class="contact__button">
+            </fieldset>
+        </form>
+    </div>
+    <a class="terms" href="terms.html">Terminos y condiciones</a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer__info">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+            <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos de Uso</a></p>
+        </div>
+    </footer>
+</body>
+</html>

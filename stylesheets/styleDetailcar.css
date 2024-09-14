@@ -1,0 +1,173 @@
+/*
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------- MAIN --------*/
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__banner--image {
+    margin: 0 auto;
+    width: 100%;
+    height: 50vw;
+}
+
+.flex-container {
+    display: flex;
+    overflow: hidden;
+    height: auto;
+    margin: 3%;
+    align-items: center;
+    justify-content: start;
+}
+
+/*-----------DETALLES DE CARROS-----------*/
+
+/*Nombre del Carro*/
+.name__car {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/*Padre de la Galería de Imágenes Detallada*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 40px;
+    margin: 20px;
+    background-color: #e9ecef;
+}
+
+/*Clase para aplicación de estilos a cada ítem*/
+.gallery__gral {
+    transition: transform 0.8s ease;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 8px;
+    height: 200px; /* Ajuste para que todas las imágenes tengan la misma altura */
+}
+
+/*Llamamiento de las imágenes como background*/
+.gallery__item--01 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_00b.jpg');
+}
+
+.gallery__item--02 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_01_Costado.jpg');
+}
+
+.gallery__item--03 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_01a_Costado_Derecho.jpg');
+}
+
+.gallery__item--04 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_01b_En_Exterior.jpg');
+}
+
+.gallery__item--05 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_01c_En_Exterior.jpg');
+}
+
+.gallery__item--06 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_01d_En_Exterior.jpg');
+}
+
+.gallery__item--07 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_02_Baul.jpg');
+}
+
+.gallery__item--08 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_03_Tablero.jpg');
+}
+
+.gallery__item--09 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_04a_Cojineria.jpg');
+}
+
+.gallery__item--10 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_05_Interior_atras.jpg');
+}
+
+.gallery__item--11 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_06_Interior_atras.jpg');
+}
+
+.gallery__item--12 {
+    background-image: linear-gradient(#0005, #0009), url('/imagenes/Opel_Crossland/Opel_07_Motor.jpg');
+}
+
+.gallery__gral:hover {
+    transform: scale(1.5);
+}
+
+/*Detalle del Carro en Texto. Internamente en Flex*/
+.gallery__item--description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: #dee2e6;
+    border-radius: 2%;
+}
+
+/*Ubicación de la Descripción en el Grid*/
+.gallery :last-child {
+    grid-column: 4 / -1;
+    grid-row: 1 / -5;
+}
+
+/*-----------BOTÓN PARA SOLICITUD DE ASESORÍA-----------*/ 
+.container__adviser {
+    text-align: center;
+}
+
+#message-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #F54703;
+}
+
+#adviser__contact--btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #1B1B1B;
+    color: #dee2e6;
+}
+
+/*--------- MEDIA QUERIES ---------*/
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 2px;
+        margin: 10px;
+        background-color: #e9ecef;
+    }
+    
+    .gallery__item--description {
+        grid-column: span 2; /* Hace que la descripción ocupe dos columnas */
+    }
+
+    .gallery__gral:hover {
+        transform: none;
+    }
+
+    .name__car {
+        font-size: 0.8em;
+    }
+}

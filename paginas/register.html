@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="/stylesheets/styleIndex.css">
+    <link rel="stylesheet" href="/stylesheets/styleRegister.css">
+    <script src="/script_FRONT/scriptRegister.js"></script>
+    <script defer src="/script_FRONT/hamburgerMenu.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo ">
+            <a href="/paginas/index.html">
+                <img class="header__logo--img" src="/imagenes/Logo_1.png" alt="descripcion">
+            </a>
+        </div>
+
+        <div class="header__menu ">
+            <button class="abrir__menu" id="abrir">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="cerrar__menu" id="cerrar">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav-list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/index.html">Inicio</a></li>
+                    <!--<li class="menu__list--item"><a class="menu__list--link" href="aboutus.html">Nosotros</a></li> -->
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/detailcar.html">Detalle</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/contact.html">Contacto</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>       
+    </header>
+
+    <main class="main">
+
+        <div class="register__header main__titulo--texto">
+            <h1 class="register__title">Regístrate</h1>
+            <p>¿Quieres ser el primero en conocer las últimas novedades y lanzamientos de vehículos de lujo? ¡No te pierdas ninguna actualización!
+                Al registrarte, recibirás notificaciones exclusivas sobre nuestros nuevos modelos, promociones especiales y eventos únicos. Sé parte de nuestra comunidad y mantente al día con todo lo que tenemos para ofrecer.</p>
+            <h4>¡Regístrate ahora y descubre el futuro del lujo automotriz!</h4>
+        </div>
+        
+        <!--Bloque: Registro-->
+        <div class="register">
+
+        <!-- Elemento: register__form -->
+            <form class="register">
+                <!--Elemento: register__fieldset Títulos -->
+                <fieldset class="register__fieldset">
+                    <!--<legend class="register__legend">Información de contacto</legend>
+                    <h2 class="register__subtitle"> Lorem ipsum dolor, sit amet consectetur</h2>-->
+                    <img class="register__subtitle" src="/imagenes/Logo_1.png">
+
+                    <!--Elemento: register__field Nombre -->
+                    <div class="register__field">
+                        <label class="register__label" for="FirstName">Nombre *</label>
+                        <input class="register__input" type="text" name="FirstNameInput" id="name" minlength="2" maxlength="15" required>
+                    </div>
+
+                    <!--Elemento: register__field Apellido-->
+                    <div class="register__field">
+                        <label class="register__label" for="LastName">Apellido *</label>
+                        <input class="register__input" type="text" name="LastNameInput" id="surname" minlength="2" maxlength="15" required>
+                    </div>
+
+                    <!--Elemento: register__field Email-->
+                    <div class="register__field">
+                        <label class="register__label" for="Email">Email *</label>
+                        <input class="register__input" type="email" name="EmailInput" id="email" required>
+                    </div>
+                    
+                    <!--Elemento: register__field Teléfono-->
+                    <div class="register__field">
+                        <label class="register__label" for="Phone">Teléfono</label>
+                        <input class="register__input" type="number" name="PhoneInput" id="phone" min="8" max="999999999999" placeholder="(+IndicadorPais) Telefono">
+                    </div>
+
+                    <!--Elemento: register__field Username-->
+                    <div class="register__field">
+                        <label class="register__label" for="username">Nombre de Usuario *</label>
+                        <input class="register__input" type="text" name="UserNameInput" id="username" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <!--Elemento: Register__field Password-->
+                    <div class="register__field">
+                        <label class="register__label" for="password">Crea una Contraseña *</label>
+                        <div class="register__label--show">
+                            <input class="register__input" type="password" name="password" id="password" minlength="8" maxlength="999999999999999" required>
+                            <i class="bi1 bi-eye-fill"></i>
+                        </div>
+                    </div>
+                    <!--Elemento: Register__field Password-->
+                    <div class="register__field">
+                        <label class="register__label" for="password">Confirma la Contraseña *</label>
+                            <div class="register__label--show">
+                                <input class="register__input-1" type="password" name="password" id="password1" minlength="8" maxlength="999999999999999" required>
+                                <i class="bi2 bi-eye-fill"></i>
+                            </div>
+                    </div>
+
+                    <!--Elemento: register__field Submit button-->
+                    <input type="submit" class="register__button">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer__info">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+            <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos de Uso</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

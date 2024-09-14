@@ -1,0 +1,134 @@
+/* Estilos del formulario de contacto */
+
+/* Header title */
+.contact__header{
+    text-align: center;
+}
+
+.contact__title {
+    color: #242222;
+}
+
+/*Title*/
+.main__titulo--texto{
+    justify-content: center;
+    padding: 10px 8vw 10px 8vw;
+}
+
+/* Contact form container */
+.contact {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #1B1B1B;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Contact form */
+.contact__form {
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: #1B1B1B;
+    border-radius: 10px;
+}
+
+/* Fieldset */
+.contact__fieldset {
+    margin: 20px 0;
+    border: 2px solid #444;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+/* Legend */
+.contact__legend {
+    padding: 0 6px;
+    font-size: 1.2em;
+}
+
+/* Title inside the form */
+.contact__subtitle {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.contact__subtitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+/* Field container */
+.contact__field {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.contact__label {
+    display: block;
+    margin: 30px 5px 10px; 
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Inputs and textareas */
+.contact__input, .contact__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #939396;
+    box-sizing: border-box;
+}
+
+.contact__input:focus, .contact__textarea:focus {
+    border-color: #F54703;
+    outline: none;
+}
+
+/*ESTE NO LO TIENE REGISTER*/
+/* Textarea */
+.contact__textarea {
+    min-height: 100px;
+    max-height: 150px;
+    resize: vertical;
+}
+
+/* Submit button */
+.contact__button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #F54703;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact__button:hover {
+    background-color: #eb5e28;
+}
+
+/* Link to Terminos y condiciones */
+.terms {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #F54703;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.terms:hover {
+    text-decoration: underline;
+}

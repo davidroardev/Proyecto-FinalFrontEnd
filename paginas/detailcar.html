@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/styleIndex.css">
+    <link rel="shortcut icon" href="/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="/script_FRONT/hamburgerMenu.js"></script>
+    <script src="/script_FRONT/scriptDetailcar.js"></script>
+    <link rel="stylesheet" href="/stylesheets/styleDetailcar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo ">
+            <a href="/paginas/index.html">
+                <img class="header__logo--img" src="/imagenes/Logo_1.png" alt="descripcion">
+            </a>
+        </div>
+        <div class="header__menu ">
+            <button class="abrir__menu" id="abrir">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="cerrar__menu" id="cerrar">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav-list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/index.html">Inicio</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/detailcar.html">Detalle</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/contact.html">Contacto</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>       
+    </header>
+    <main>
+        <h1 class="name__car">OPEL CROSSLAND</h1>
+
+        <!--Galería de Fotos Detalladas del Carro-->
+        <div class="gallery">
+            <div class="gallery__item--01 gallery__gral"></div>
+            <div class="gallery__item--02 gallery__gral"></div>
+            <div class="gallery__item--03 gallery__gral"></div>
+            <div class="gallery__item--04 gallery__gral"></div>
+            <div class="gallery__item--05 gallery__gral"></div>
+            <div class="gallery__item--06 gallery__gral"></div>
+            <div class="gallery__item--07 gallery__gral"></div>
+            <div class="gallery__item--08 gallery__gral"></div>
+            <div class="gallery__item--09 gallery__gral"></div>
+            <div class="gallery__item--10 gallery__gral"></div>
+            <div class="gallery__item--11 gallery__gral"></div>
+            <div class="gallery__item--12 gallery__gral"></div>
+
+            <!--Descripción Cualitativa del Carro-->
+            <div class="gallery__item--description">
+                <h2 class="gallery__item--caption"> DESCRIPCIÓN DEL VEHÍCULO</h2>
+                <h3> La Marca </h3>
+                <p> Alemana de tradición y confiable por convicción. Opel es una marca que nunca te decepcionará pues lleva en su ADN el rigor y la disciplina de hacer bien las cosas.
+                Súbete a un Opel y compruébalo. </p>
+                <h3> El Vehículo</h3>
+                <p>Versatilidad que llama la atención. Estilo que está listo para cualquier cosa. Desde el diseño exterior audazmente distintivo hasta el interior puramente práctico, Crossland es el SUV con flexibilidad para todos los días y con su diseño logra llamar la atención donde quiera que vaya.</p>
+                
+                <p>El nuevo diseño alemán puro del Opel Crossland es audazmente sofisticado, pero se centra en la practicidad del mundo real. Con un estilo relajado y seguro y una postura cómoda de SUV, es perfecto para cualquiera que esté listo para conducir a su manera.</p>
+                
+                <p>Además de verse bien en la carretera, al conducir el Crossland también te sentirás bien. La funcionalidad versátil del interior, como los asientos traseros, la posición de asiento alta y la amplitud líder en su clase, se ve reforzada por los asientos adaptables que son tan agradables para las actividades cortas, como para viajes de largo recorrido.</p>
+            </div>
+        </div>
+        <!--JS: Botón para ser contactado por un asesor-->
+        <div class="container__adviser">
+            <button id="adviser__contact--btn">Contactar un Asesor</button>
+            <!-- Contenedor para el mensaje desde JS-->
+            <div id="message-container"></div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer__info">
+            <p>&copy; 2024 TalentoTech. Todos los derechos reservados.</p>
+            <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos de Uso</a></p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
