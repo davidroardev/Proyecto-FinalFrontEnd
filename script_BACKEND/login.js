@@ -22,9 +22,13 @@ window.onload = (event) =>{
 
             const data = await response.json();
             console.log(data);
+            const encodeData = btoa(JSON.stringify(data));
+            console.log(encodeData);
+
             if(response.ok){
                 loginMessage.textContent= 'login Exitoso'
                 loginMessage.style.color = '#CCC'
+                window.location.href = `../paginas/dashboard.html#${encodeData}`
             }else{
                 loginMessage.textContent= data.message || 'Hubo un Error en el Login'
                 loginMessage.style.color = '#eb5e28'
