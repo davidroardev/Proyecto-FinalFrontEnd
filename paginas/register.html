@@ -32,7 +32,6 @@
 
                 <ul class="menu__list nav-list">
                     <li class="menu__list--item"><a class="menu__list--link" href="/paginas/index.html">Inicio</a></li>
-                    <!--<li class="menu__list--item"><a class="menu__list--link" href="aboutus.html">Nosotros</a></li> -->
                     <li class="menu__list--item"><a class="menu__list--link" href="/paginas/detailcar.html">Detalle</a></li>
                     <li class="menu__list--item"><a class="menu__list--link" href="/paginas/contact.html">Contacto</a></li>
                     <li class="menu__list--item"><a class="menu__list--link" href="/paginas/register.html">Registro</a></li>
@@ -89,19 +88,19 @@
                     <!--Elemento: register__field Nombre -->
                     <div class="register__field">
                         <label class="register__label" for="FirstName">Nombre *</label>
-                        <input class="register__input" type="text" name="FirstNameInput" id="name" minlength="2" maxlength="15" required>
+                        <input class="register__input" type="text" name="FirstNameInput" id="FirstName" minlength="2" maxlength="15" required>
                     </div>
 
                     <!--Elemento: register__field Apellido-->
                     <div class="register__field">
                         <label class="register__label" for="LastName">Apellido *</label>
-                        <input class="register__input" type="text" name="LastNameInput" id="surname" minlength="2" maxlength="15" required>
+                        <input class="register__input" type="text" name="LastNameInput" id="LastName" minlength="2" maxlength="15" required>
                     </div>
 
                     <!--Elemento: register__field Teléfono-->
                     <div class="register__field">
                         <label class="register__label" for="Phone">Teléfono</label>
-                        <input class="register__input" type="number" name="PhoneInput" id="phone" min="8" max="999999999999" placeholder="(+IndicadorPais) Telefono">
+                        <input class="register__input" type="number" name="PhoneInput" id="Phone" min="8"  placeholder="(+IndicadorPais) Telefono">
                     </div>
 
                     <!--Elemento: register__field Username-->
@@ -120,7 +119,7 @@
                     <div class="register__field">
                         <label class="register__label" for="new_password">Crea una Contraseña *</label>
                         <div class="register__label--show">
-                            <input class="register__input" type="password" name="new_password" id="new_password" minlength="8" maxlength="999999999999999" required>
+                            <input class="register__input" type="password" name="new_password" id="new_password"  maxlength="999999999999999" required>
                             <i class="bi1 bi-eye-fill"></i>
                         </div>
                     </div>
@@ -128,14 +127,14 @@
                     <div class="register__field">
                         <label class="register__label" for="password">Confirma la Contraseña *</label>
                             <div class="register__label--show">
-                                <input class="register__input-1" type="password" name="password" id="password1" minlength="8" maxlength="999999999999999" required>
+                                <input class="register__input-1" type="password" name="password" id="password1"  maxlength="999999999999999" required>
                                 <i class="bi2 bi-eye-fill"></i>
                             </div>
                     </div>
 
                     <!--Elemento: register__field Submit button-->
                     <button class="register__button" type="submit">Registrar</button>
-                    <p id="loginMessage"></p>
+                    <p id="registerMessage"></p>
                 </fieldset>
             </form>
         </section>
