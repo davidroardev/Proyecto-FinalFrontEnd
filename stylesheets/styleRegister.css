@@ -18,13 +18,14 @@
 }
 
 /* register form container */
-.register {
+.register ,.registerLogin{
     margin: 0 auto;
     max-width: 600px;
     background-color: #1B1B1B;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     padding: 20px;
+    text-align: center;
 }
 
 /* register form */
@@ -78,6 +79,15 @@
     margin: 30px 5px 10px; 
     font-size: 1.2em;
     color: #ccc;
+}
+
+h2{
+    font-size: 30px;
+    color: #ccc;
+}
+
+.registerLogin{
+    text-align: left;
 }
 
 /* Inputs */
