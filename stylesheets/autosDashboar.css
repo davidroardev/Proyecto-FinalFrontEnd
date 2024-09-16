@@ -1,0 +1,111 @@
+.showSection{
+    margin: 20px 0 ;
+    background-color: #1B1B1B;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: left;
+    color:  #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+
+table {
+    width: 100%; /* Para que la tabla ocupe todo el ancho disponible */
+    border-spacing: px 0; /* Separación horizontal (entre las columnas) */
+}
+
+
+
+th,td{
+    color:#F54703;
+    padding: 8px 15px;
+    background-color: #2A2A2A;
+    text-align: left;
+    border-bottom: solid 3px #4A4A4A;
+}
+
+td{
+    color: #ccc;
+}
+
+.crearAuto{
+    align-self: flex-start;
+    padding: 10px;
+    background-color: #F54703;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    margin: 5px 5px;
+}
+
+p{
+    margin: 5px ;
+}
+
+.registerLogin{
+    margin: 20px 0 20px 0;
+    
+    background-color: #1B1B1B;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: left;
+}
+
+.register__label{
+    display: block;
+    margin: 30px 5px 10px; 
+    font-size: 1.2em;
+    color: #ccc;
+    
+}
+
+.register__label--show {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #939396;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.register__input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #939396;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 20px ;
+}
+
+.crearAuto_button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #F54703;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.register__button:hover {
+    background-color: #eb5e28;
+}

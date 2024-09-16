@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/styleIndex.css">
+    <link rel="stylesheet" href="/stylesheets/autosDashboar.css">
+    <script defer src="/script_FRONT/hamburgerMenu.js"></script>
+    <script src="/script_BACKEND/getAutos.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo ">
+            <a href="/paginas/index.html">
+                <img class="header__logo--img" src="/imagenes/Logo_1.png" alt="descripcion">
+            </a>
+        </div>
+
+        <div class="header__menu ">
+            <button class="abrir__menu" id="abrir">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="cerrar__menu" id="cerrar">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav-list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/index.html">Autos</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/detailcar.html">Usuarios</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="/paginas/index.html">Cerrar Sesion</a></li>
+                    
+                </ul>
+            </nav>
+        </div>       
+    </header>
+
+    <main class="main">
+        <section class="showSection" id="createAuto">
+            <h2>Crear Autos</h2>
+            <form class="registerLogin" id="autosForm">
+                <fieldset class="register__fieldset">
+                    
+                    <div class="register__field">
+                        <label class="register__label" for="id">Id Auto</label>
+                        <input class="register__input" type="text" name="id" id="id" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <div class="register__field">
+                        <label class="register__label" for="make">Marca Auto</label>
+                        <input class="register__input" type="text" name="make" id="make" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <div class="register__field">
+                        <label class="register__label" for="model">Modelo Auto</label>
+                        <input class="register__input" type="text" name="model" id="model" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <div class="register__field">
+                        <label class="register__label" for="color">Color Auto</label>
+                        <input class="register__input" type="text" name="color" id="color" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <div class="register__field"></div>
+                        <label class="register__label" for="year">Año Auto</label>
+                        <input class="register__input" type="number" name="year" id="year" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <div class="register__field"></div>
+                        <label class="register__label" for="price">Precio Auto</label>
+                        <input class="register__input" type="number" name="price" id="price" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    
+                    
+                    <button class="crearAuto_button" type="submit">Crear categoria</button>
+                </fieldset>
+            </form>
+        </section>
+        
+
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer__info">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+            <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos de Uso</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
