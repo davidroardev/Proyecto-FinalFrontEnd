@@ -96,4 +96,10 @@ async function deleteAuto(id){
         console.error(error);
         window.alert('Tenermos una falla en el servidor')
     }
+};
+
+async function modifyAuto(id) {
+    window.location.href=`/paginas/dashboard/updateAutos.html?id=${id}`
 }
+
+

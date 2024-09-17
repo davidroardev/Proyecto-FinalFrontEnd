@@ -11,6 +11,8 @@ window.onload = (event) =>{
         const autoyear = document.getElementById('year').value;
         const autoPrice = document.getElementById('price').value;
 
+        
+
         try {
             const response = await fetch('http://localhost:3000/createautos',{
                 method:'POST',
@@ -21,9 +23,9 @@ window.onload = (event) =>{
                     yearAuto:autoyear, priceAuto:autoPrice})
             });
             const data = await response.json();
-            ;
             if(response.ok){
                 window.alert('Auto Creado Exitosamente');
+                window.location.href = '/paginas/dashboard/autos.html'
             }else{
                 window.alert('Auto no se pudo Crear');
             }
