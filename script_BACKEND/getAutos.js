@@ -9,7 +9,7 @@ window.onload =  (event) => {
         window.location.href= '/paginas/dashboard/createAutos.html'
     })
 };
-const apiUrl = 'https://proyecto-final-backend-o9fo0mwyp-david-roa-s-projects.vercel.app'
+const apiUrl = 'https://proyecto-final-backend-mocha.vercel.app'
 async function loadAutos() {
     try {
         const response = await fetch(`${apiUrl}/getautos`,{

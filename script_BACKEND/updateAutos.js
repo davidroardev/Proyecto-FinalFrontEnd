@@ -23,7 +23,7 @@ window.onload = async (event) =>{
         
     })
 }
-const apiUrl = 'https://proyecto-final-backend-o9fo0mwyp-david-roa-s-projects.vercel.app'
+const apiUrl = 'https://proyecto-final-backend-mocha.vercel.app'
 
 function getQueryParams (param){
     const urlParams = new URLSearchParams(window.location.search);
