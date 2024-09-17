@@ -45,6 +45,20 @@ async function loadAutos() {
             const pricecell = document.createElement('td');
             pricecell.textContent = auto.price
 
+            const actionCell = document.createElement('td');
+
+            const modifyButton = document.createElement('button');
+            modifyButton.textContent='Modificar';
+            modifyButton.classList.add('modify_button')
+            modifyButton.onclick = () => modifyAuto(auto.auto_id);
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent='Eliminar';
+            deleteButton.classList.add('delete_button')
+            deleteButton.onclick = () => deleteAuto(auto.auto_id);
+
+            actionCell.appendChild(modifyButton);
+            actionCell.appendChild(deleteButton);
 
             row.appendChild(idcell);
             row.appendChild(makecell);
@@ -52,6 +66,7 @@ async function loadAutos() {
             row.appendChild(colorcell);
             row.appendChild(yearcell);
             row.appendChild(pricecell);
+            row.appendChild(actionCell)
             
 
             tbody.appendChild(row)
@@ -61,3 +76,24 @@ async function loadAutos() {
         console.log(error);
     }
 };
+
+async function deleteAuto(id){
+    try {
+        const response = await fetch(`http://localhost:3000/deleteautos/${id}`,{
+            method:'DELETE',
+            headers:{
+                'Content-Type':'application/json'
+            },
+        });
+        const data = await response.json();
+        if(response.ok){
+            window.alert('Auto Eliminado Exitosamente');
+            window.location.reload();
+        }else{
+            window.alert('Auto no se pudo Eliminar');
+        }
+    } catch (error) {
+        console.error(error);
+        window.alert('Tenermos una falla en el servidor')
+    }
+}

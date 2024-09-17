@@ -106,6 +106,31 @@ p{
     text-align: center;
 }
 
-.register__button:hover {
+.crearAuto_button:hover {
     background-color: #eb5e28;
+}
+
+
+.modify_button{
+    padding: 10px;
+    background-color: #F54703;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.delete_button{
+    padding: 10px 14px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
 }
