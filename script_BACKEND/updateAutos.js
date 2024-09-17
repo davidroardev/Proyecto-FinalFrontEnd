@@ -23,6 +23,7 @@ window.onload = async (event) =>{
         
     })
 }
+const apiUrl = 'https://proyecto-final-backend-o9fo0mwyp-david-roa-s-projects.vercel.app'
 
 function getQueryParams (param){
     const urlParams = new URLSearchParams(window.location.search);
@@ -31,7 +32,7 @@ function getQueryParams (param){
 
 async function loadAuto(id){
     try {
-        const response = await fetch(`http://localhost:3000/getautosbyid/${id}`,{
+        const response = await fetch(`${apiUrl}/getautosbyid/${id}`,{
             method: 'GET',
             headers:{
                 'Content-Type': 'application/json'
@@ -46,7 +47,7 @@ async function loadAuto(id){
 
 async function updateAutos(id,make,model,color,year,price) {
     try {
-        const response = await fetch (`http://localhost:3000/updateauto/${id}`,{
+        const response = await fetch (`${apiUrl}/updateauto/${id}`,{
             method:'PUT',
             headers:{
                 'Content-Type':'application/json'

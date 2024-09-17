@@ -1,4 +1,5 @@
 window.onload = (event) =>{
+    const apiUrl = 'https://proyecto-final-backend-o9fo0mwyp-david-roa-s-projects.vercel.app'
     const loginForm = document.getElementById('loginForm');
     const loginMessage = document.getElementById('loginMessage');
     const registerForm = document.getElementById('registerForm');
@@ -12,7 +13,7 @@ window.onload = (event) =>{
         const password = document.getElementById('password').value;
 
         try {
-            const response = await fetch('http://localhost:3000/api/login',{
+            const response = await fetch(`${apiUrl}/api/login`,{
                 method: 'POST',
                 headers:{
                     'Content-Type': 'application/json'
@@ -51,7 +52,7 @@ window.onload = (event) =>{
         const phoneNumber = document.getElementById('Phone').value;
 
         try {
-            const response = await fetch('http://localhost:3000/user/register',{
+            const response = await fetch(`${apiUrl}/user/register`,{
                 method: 'POST',
                 headers:{
                     'Content-Type': 'application/json'

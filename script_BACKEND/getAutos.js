@@ -9,10 +9,10 @@ window.onload =  (event) => {
         window.location.href= '/paginas/dashboard/createAutos.html'
     })
 };
-
+const apiUrl = 'https://proyecto-final-backend-o9fo0mwyp-david-roa-s-projects.vercel.app'
 async function loadAutos() {
     try {
-        const response = await fetch('http://localhost:3000/getautos',{
+        const response = await fetch(`${apiUrl}/getautos`,{
             method: 'GET',
             headers:{
                 'Content-Type': 'application/json'
@@ -79,7 +79,7 @@ async function loadAutos() {
 
 async function deleteAuto(id){
     try {
-        const response = await fetch(`http://localhost:3000/deleteautos/${id}`,{
+        const response = await fetch(`${apiUrl}/deleteautos/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json'

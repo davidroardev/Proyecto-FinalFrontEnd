@@ -1,4 +1,5 @@
 window.onload = (event) =>{
+    const apiUrl = 'https://proyecto-final-backend-o9fo0mwyp-david-roa-s-projects.vercel.app'
     const autosForm= document.getElementById('autosForm');
 
     autosForm.addEventListener('submit', async function(event) {
@@ -14,7 +15,7 @@ window.onload = (event) =>{
         
 
         try {
-            const response = await fetch('http://localhost:3000/createautos',{
+            const response = await fetch(`${apiUrl}/createautos`,{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
